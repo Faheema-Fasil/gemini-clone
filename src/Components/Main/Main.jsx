@@ -12,7 +12,7 @@ function Main() {
         </div>
         <div className="main-container">
             <div className="greet">
-                <p> <span>  Hello,Dev</span></p>
+                <p> <span>  Hello, Dev.</span></p>
                 <p>How can I help you today?</p>
             </div>
             <div className="cards">
@@ -30,8 +30,21 @@ function Main() {
                 </div>
                 <div className="card">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque neque sint magni perspiciatis adipisci doloremque repellendus qui voluptate expedita sed, aliquam animi praesentium quidem velit quos, ullam veritatis voluptatem officia.</p>
-                    <img src={assets.code} alt="" />
+                    <img src={assets. code_icon} alt="" />
                 </div>
+            </div>
+            <div className="main-bottom">
+                <div className="search-box">
+                    <input type="text" placeholder='Enter a prompt here' />
+                    <div>
+                        <img src={assets.gallery_icon} alt="" />
+                        <img src={assets.mic_icon} alt="" />
+                        <img src={assets.send_icon} alt="" />
+                    </div>
+                </div>
+                <p className='bottom-info'>
+                    Gemini may displayy inaccurate info, including about people, so double-che ck its responses. Your privacy and Gemini Apps
+                </p>
             </div>
         </div>
      
