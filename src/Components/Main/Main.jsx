@@ -20,19 +20,19 @@ function Main() {
             </div>
             <div className="cards">
                 <div className="card">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque neque sint magni perspiciatis adipisci doloremque repellendus qui voluptate expedita sed, aliquam animi praesentium quidem velit quos, ullam veritatis voluptatem officia.</p>
+                    <p>Suggest beautiful places to see on an upcoming road trip</p>
                     <img src={assets.compass_icon} alt="" />
                 </div>
                 <div className="card">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque neque sint magni perspiciatis adipisci doloremque repellendus qui voluptate expedita sed, aliquam animi praesentium quidem velit quos, ullam veritatis voluptatem officia.</p>
+                    <p>Briefly summarize this concept:urban planning</p>
                     <img src={assets.bulb_icon} alt="" />
                 </div>
                 <div className="card">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque neque sint magni perspiciatis adipisci doloremque repellendus qui voluptate expedita sed, aliquam animi praesentium quidem velit quos, ullam veritatis voluptatem officia.</p>
+                    <p>Brainstrom team bonding activities for our work retreat</p>
                     <img src={assets.message_icon} alt="" />
                 </div>
                 <div className="card">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque neque sint magni perspiciatis adipisci doloremque repellendus qui voluptate expedita sed, aliquam animi praesentium quidem velit quos, ullam veritatis voluptatem officia.</p>
+                    <p>Improve the readability of the following code</p>
                     <img src={assets. code_icon} alt="" />
                 </div>
             </div>
@@ -59,11 +59,11 @@ function Main() {
 
             <div className="main-bottom">
                 <div className="search-box">
-                    <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Enter a prompt here' />
+                    <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Ask Gemini' />
                     <div>
                         <img src={assets.gallery_icon} alt="" />
                         <img src={assets.mic_icon} alt="" />
-                        <img onClick={()=>onSent(input)} src={assets.send_icon} alt="" />
+                        {input? <img onClick={()=>onSent(input)} src={assets.send_icon} alt="" /> :null}
                     </div>
                 </div>
                 <p className='bottom-info'>
