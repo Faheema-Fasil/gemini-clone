@@ -16,7 +16,7 @@ function Sidebar() {
         <img className='menu' onClick={() => setExtented(prev => !prev)} src={assets.menu_icon} alt="" />
         <div onClick={() => newChat()} className="new-chat">
           <img src={assets.plus_icon} alt="" />
-          {extended ? <p>New Chat</p> : null}
+          {extended ? <p>New new Chat</p> : null}
         </div>
         {
           extended ?
