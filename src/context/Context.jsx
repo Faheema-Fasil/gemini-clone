@@ -19,6 +19,8 @@ const ContextProvider= (props)=>{
     const newChat=()=>{
         setLoading(false)
         setShowResult(false)
+        console.log("main2");
+        
         
     }
 
