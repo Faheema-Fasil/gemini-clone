@@ -28,6 +28,13 @@ const ContextProvider= (props)=>{
         setShowResult(true)
         let response;
         const newPrompt = prompt !== undefined ? prompt : input;
+
+
+
+
+
+
+        
         
 
     // Run the prompt
